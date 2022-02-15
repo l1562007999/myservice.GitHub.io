@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+/* 设置版心 */
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 链接点击后不变色 */
+a:visited {
+    color: #000000;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+
+/* 头部区域 */
+.header {
+    overflow: hidden;
+
+    height: 54px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.logo img {
+    float: left;
+    width: 54px;
+    border-radius: 27px;
+}
+
+.logo h3 {
+    float: left;
+    font-size: 28px;
+    color: #999999;
+    line-height: 54px;
+    padding-left: 20px;
+}
+
+.header .shuxian {
+    float: left;
+    width: 4px;
+    height: 30px;
+    margin: 14px 20px 0;
+    background-color: #262626;
+}
+
+.header .myservice {
+    float: left;
+    font-size: 18px;
+    color: #262626;
+    line-height: 56px;
+}
+
+.user {
+    float: right;
+    margin: auto 0;
+
+}
+
+.user .username {
+    float: left;
+    font-size: 18px;
+    color: #262626;
+    line-height: 54px;
+    padding: 0 20px 0 10px;
+}
+
+.user img {
+    display: block;
+    float: left;
+    width: 54px;
+    border-radius: 27px;
+
+}
+
+/* 菜单导航栏 */
+.nav {
+    display: flex;
+    height: 54px;
+    background-color: #F2F2F2;
+    padding: 0 100px 0 100px;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.nav li {
+    flex: 1;
+    width: 33.33%;
+    height: 44px;
+    margin-top: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 50px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, .15);
+}
+
+.nav li:hover {
+    background-color: #DAE3F3;
+}
+
+.nav li:nth-child(2) {
+    margin: 4px 100px 0;
+}
+
+.nav li img {
+    float: left;
+    width: 46px;
+    vertical-align: middle;
+
+}
+
+.nav li h4 {
+    font-size: 16px;
+    line-height: 46px;
+    margin-left: 50px;
+}
+
+/* 版权模块 */
+.footer p {
+
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 18px;
+}

@@ -1,0 +1,274 @@
+/* 引入图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3hv16j');
+    src: url('../fonts/icomoon.eot?3hv16j#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?3hv16j') format('truetype'),
+        url('../fonts/icomoon.woff?3hv16j') format('woff'),
+        url('../fonts/icomoon.svg?3hv16j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 去除搜索框默认样式 */
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+/* 搜索模块 */
+.search {
+
+    height: 426px;
+    background-color: #16549D;
+}
+
+.search .welcome {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.search .welcome h3, span {
+    display: inline-block;
+    font-size: 37px;
+    color: #fff;
+}
+
+/* 搜索框 */
+.searchframe {
+    position: relative;
+    width: 748px;
+    height: 50px;
+    margin: 50px auto;
+}
+
+.searchframe input {
+    width: 748px;
+    height: 50px;
+    padding-left: 40px;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    /* 去除搜索框获得焦点时有内边框 */
+    outline: none;
+}
+
+/* 搜索放大镜图标 */
+.searchframe::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/search.png) no-repeat;
+    background-size: 30px;
+}
+
+.searchframe .btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border: 0;
+    color: #ccc;
+    font-size: 18px;
+    font-family: "icomoon";
+}
+
+.searchframe .btn:hover {
+    border: 2px dotted #797979;
+}
+
+/* 搜索历史模块 */
+.history {
+    width: 900px;
+    height: 90px;
+    margin: 0 50px;
+}
+
+.history .hd {
+    overflow: hidden;
+}
+
+.history .hd span {
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.history .hd button {
+    float: right;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+.history .bd {
+    background-color: #fff;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.history .bd ul {
+    display: flex;
+    align-items: center;
+}
+
+.history .bd ul li {
+    flex: 1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    /* 超出显示省略号 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history .bd ul li a {
+    border-bottom: 1px solid #000000;
+}
+
+.history .bd ul li a:hover {
+    color: #16549D;
+}
+
+.history .bd ul li:nth-child(-n+3) {
+    margin-right: 10px;
+}
+
+/* 服务大全模块 */
+.allservice {
+    position: relative;
+    height: 400px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+
+}
+
+.allservice .head h4 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 28px;
+}
+
+.allservice .body ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 56px;
+    margin: 0 50px;
+
+}
+
+.allservice .body ul a {
+    display: flex;
+    flex-direction: column;
+    /* 主轴y轴居中 */
+    justify-content: center;
+    /* 侧轴x轴居中 */
+    align-items: center;
+    width: 33.33%;
+    height: 160px;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+
+.allservice .body ul a:hover {
+
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.allservice .body ul a li img {
+    width: 70px;
+}
+
+.allservice .body ul a li h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.allservice .body ul a li p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* felx换行走后一行左对齐 子项未设置 */
+.allservice .body ul a:last-child {
+    margin-right: auto;
+}
+
+/* 热点主题板块 */
+.hotissue {
+    position: relative;
+    height: 400px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding-top: 80px;
+
+}
+
+.hotissue .head h4 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 28px;
+}
+
+.hotissue .body {
+    display: flex;
+    margin: 0 40px;
+}
+
+.hotissue .body dl {
+    flex: 1;
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.hotissue .body dl:last-child {
+    margin-right: 0px;
+}
+
+.hotissue .body dt {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: #16549D;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
+}
+
+.hotissue .body dd {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hotissue .body dd:after {
+    position: absolute;
+    right: 4px;
+
+    content: ">";
+}
+
+.hotissue .body dd:hover {
+    color: #16549D;
+}
